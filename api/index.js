@@ -1,6 +1,7 @@
 'use strict'
 
 var mongoose = require('mongoose');
+var app = require('./app');
 
 // Conexão com o banco de dados
 mongoose.Promise = global.Promise;
