@@ -1,0 +1,8 @@
+{
+    nome: 'admin',
+    sobrenome: 'admin',
+    apelido: 'admin',
+    email: 'admin@admin.com',
+    senha: 'admin',
+    imagem: null
+}
