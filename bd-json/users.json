@@ -1,0 +1,8 @@
+{
+    name: 'admin',
+    surname: 'admin',
+    nick: 'admin',
+    email: 'admin@admin.com',
+    password: 'admin',
+    image: null
+}

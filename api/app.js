@@ -14,9 +14,15 @@ app.use(bodyParser.json());
 // Cors
 
 // Rotas
-app.get('/teste', (req, res) => {
+app.get('/', (req, res) => {
     res.status(200).send({
-        message: 'Testando servidor NodeJS'
+        message: 'Hello word!'
+    });
+});
+
+app.get('/testing', (req, res) => {
+    res.status(200).send({
+        message: 'Testing node server!'
     });
 });
 
