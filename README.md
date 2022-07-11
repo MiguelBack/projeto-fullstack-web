@@ -7,12 +7,13 @@
     sudo add-apt-repository ppa:git-core/ppa
     sudo apt list --upgradable
     sudo su
-    sudo apt update; apt install git
+    sudo apt update
+    apt install git
 
 1.1 - Config
 
-    git config --global user.name "igorbarros"
-    git config --global user.email "barrosigor74@gmail.com"
+    git config --global user.name "seu nome de usuário"
+    git config --global user.email "seu email"
 
 # USE GIT
 
