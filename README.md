@@ -46,4 +46,34 @@
 
     git merge <branch>
 
----
+## INSTALACOES NO MACOS
+
+# Instale o Homebrew no seu macOS
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo "# Homebrew\nexport PATH=/opt/homebrew/bin:\$PATH" >> .zshrc
+source ~/.zshrc
+
+## Instale o NVM (Node Version Manager) no macOS
+
+brew update
+brew install nvm
+mkdir ~/.nvm
+
+echo "export NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> .zshrc
+source ~/.zshrc
+
+nvm -v
+
+## Instalação do Node.js
+
+brew update  
+brew install node
+
+node -v
+
+## Instale o Angular/CLI no macOS
+
+npm install -g @angular/cli
+
+ng --version
