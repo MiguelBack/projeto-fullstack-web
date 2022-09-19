@@ -1,16 +1,16 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'login',
-  templateUrl: './login.Component.html'
+  selector: 'registro',
+  templateUrl: './registro.Component.html'
 })
 
-export class LoginComponent implements OnInit{
+export class RegistroComponent implements OnInit{
 
   public title: string;
 
   constructor(){
-    this.title = 'Entrar';
+    this.title = 'Cadastre-se';
   }
 
   ngOnInit(): void {
