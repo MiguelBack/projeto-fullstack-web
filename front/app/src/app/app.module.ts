@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders } from './app.routing';
+// IMPORTAÇÃO PARA SE UTILIZAR O FORMULÁRIO DO ANGULAR
+import { FormsModule } from '@angular/forms';                
 
 // COMPONENTES
 import { AppComponent } from './app.component';
@@ -14,7 +16,8 @@ import { CadastroComponent } from 'componentes/cadastro/cadastro.component';
     CadastroComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,                  
+    FormsModule,
     routing
   ],
   providers: [

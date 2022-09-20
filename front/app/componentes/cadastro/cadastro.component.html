@@ -1,1 +1,32 @@
-<h1>{{ title }}</h1>
+<div class="col-lg-6">
+  <h1>{{ title }}</h1>
+  <form class="col-lg-10" #cadastroForm="ngForm">
+    <p>
+      <label>Nome</label>
+      <input class="form-control" required type="text" name="nome" #nome="ngModel" [(ngModel)]="usuario.nome"/>
+      <span *ngIf="!nome.valid && nome.touched">O nome é obrigratório!</span>
+    </p>
+    <p>
+      <label>Sobrenome</label>
+      <input class="form-control" required type="text" name="sobrenome" #sobrenome="ngModel" [(ngModel)]="usuario.sobrenome"/>
+      <span *ngIf="!sobrenome.valid && sobrenome.touched">O sobrenome é obrigratório!</span>
+    </p>
+    <p>
+      <label>Apelido</label>
+      <input class="form-control" required type="text" name="apelido" #apelido="ngModel" [(ngModel)]="usuario.apelido"/>
+      <span *ngIf="!apelido.valid && apelido.touched">O apelido é obrigratório!</span>
+    </p>
+    <p>
+      <label>Email</label>
+      <input class="form-control" required type="text" name="email" #email="ngModel" [(ngModel)]="usuario.email"/>
+      <span *ngIf="!email.valid && email.touched">O email é obrigratório!</span>
+    </p>
+    <p>
+      <label>Senha</label>
+      <input class="form-control" required type="text" name="senha" #senha="ngModel" [(ngModel)]="usuario.senha"/>
+      <span *ngIf="!senha.valid && senha.touched">A senha é obrigratória!</span>
+    </p>
+
+    <input type="submit" value="{{title}}" class="btn btn-success" [disabled]="!cadastroForm.form.valid"/>
+  </form>
+</div>
