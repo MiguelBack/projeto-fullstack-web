@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'registro',
-  templateUrl: './registro.Component.html'
+  selector: 'cadastro',
+  templateUrl: './cadastro.Component.html'
 })
 
-export class RegistroComponent implements OnInit{
+export class CadastroComponent implements OnInit{
 
   public title: string;
 
@@ -14,6 +14,6 @@ export class RegistroComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    console.log('Componente carregado...');
+    console.log('Componente cadastro carregado...');
   }
 }
