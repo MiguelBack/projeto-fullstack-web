@@ -18,8 +18,8 @@
     </p>
     <p>
       <label>Email</label>
-      <input class="form-control" required type="text" name="email" #email="ngModel" [(ngModel)]="usuario.email"/>
-      <span *ngIf="!email.valid && email.touched">O email é obrigratório!</span>
+      <input class="form-control" required type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" #email="ngModel" [(ngModel)]="usuario.email"/>
+      <span *ngIf="!email.valid && email.touched">O email não é valido!</span>
     </p>
     <p>
       <label>Senha</label>
