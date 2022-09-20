@@ -1,6 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-.navigation-col-12 {
+/* BARRA DE NAVEGAÇÃO */
+.navigation {
   padding: 0px !important;
+}
+.navigation-col-12 {
   border-radius: 0px !important;
-  background-color: chartreuse;
+  background-color: #1C5C27 !important;
+  border: none;
+}
+.navigation-col-12 .navbar * {
+  color: white !important;
+}
+/* GERAL */
+.h1-geral {
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.col-lg-10 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
