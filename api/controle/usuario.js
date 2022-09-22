@@ -1,20 +1,19 @@
-'use strict'
+'use strict';
 
-var Usuario = require('../modelos/usuario');
+var Usuario = require('../modelos/usuarios');
 
 function inicio(req, res) {
-    res.status(200).send({
-        message: 'Hello word!'
-    });
-};
+	res.status(200).send({
+		nome: 'Luan',
+		idade: '18',
+		apelido: 'lulu',
+	});
+}
 
 function teste(req, res) {
-    res.status(200).send({
-        message: 'Testing node server!'
-    });
-};
-
-module.exports = {
-    inicio,
-    teste
+	res.status(200).send({
+		message: 'Apenas um teste de rota!',
+	});
 }
+
+module.exports = { inicio, teste };

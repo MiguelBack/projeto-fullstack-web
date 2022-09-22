@@ -1,1 +1,20 @@
-<h1>{{ title }}</h1>
+<div class="col-lg-6">
+    <h1 class="h1-geral">{{ title }}</h1>
+    <form class="col-lg-10" #cadastroForm="ngForm">
+    
+        <p>
+            <label>Email</label>
+            <input class="form-control" required type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                name="email" #email="ngModel" [(ngModel)]="usuario.email" />
+            <span *ngIf="!email.valid && email.touched">O email não é valido!</span>
+        </p>
+        <p>
+            <label>Senha</label>
+            <input class="form-control" required type="text" name="senha" #senha="ngModel"
+                [(ngModel)]="usuario.senha" />
+            <span *ngIf="!senha.valid && senha.touched">A senha é obrigratória!</span>
+        </p>
+
+        <input type="submit" value="{{title}}" class="btn btn-success" [disabled]="!cadastroForm.form.valid" />
+    </form>
+</div>

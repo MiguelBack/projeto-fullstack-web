@@ -1,19 +1,37 @@
 import { Component, OnInit } from "@angular/core";
-
+import { Router, ActivatedRoute, Params } from "@angular/router";
+import { Usuario } from "modelo/usuario";
 @Component({
   selector: 'login',
   templateUrl: './login.Component.html'
 })
 
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
 
   public title: string;
+  // DECLARAÇÃO DO OBJETO USUÁRIO
+  public usuario: Usuario;
 
-  constructor(){
-    this.title = 'Entrar';
+  constructor(
+    // CONFIGURAÇÃO DAS PROPRIEDADES DAS ROTAS PARA DEFINIR AS CLASSES
+    private _rota: ActivatedRoute,
+    private _rotas: Router
+  ) {
+    this.title = 'Entar';
+    // DECLARAÇÃO DE PROPRIEDADE VAZIA, PARA RECEBER VALORES DO FORMULÁRIO
+    this.usuario = new Usuario(
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "FUNCAO_USUARIO",
+      ""
+    )
   }
 
   ngOnInit(): void {
-    console.log('Componente carregado...');
+    console.log('Componente cadastro carregado...');
   }
 }
